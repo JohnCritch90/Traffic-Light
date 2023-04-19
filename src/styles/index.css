@@ -1,4 +1,31 @@
+.lightTop {
+    background-color: black;
+    width: 20px;
+    height: 80px;
+    margin-left: 600px;
+}
 
+.traffic-light {
+    text-align: center;
+    width: 250px;
+    height: auto;
+    border: 3px solid black;
+    background: black;
+    margin-left: 485px;
+}
+
+.light{
+    width: 175px;
+    height: 175px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 7px;
+}
+
+.glow {
+    box-shadow: 0px 0px 9px 4px #747DE8;
+}
 
 
 

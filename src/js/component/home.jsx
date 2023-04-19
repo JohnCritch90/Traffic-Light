@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+import Light from ".//light.jsx";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-export const Home = () => {
+const Home = (props) => {
+	const colors = ["red", "yellow", "green"];
+	const [lit, setLit] =  useState("red");
 	return (
-		<div className="trafficLight">
-			<div className="red light">a</div>
-			<div className="yellow light">b</div>
-			<div className="green light">c</div>
+		<div>
+			<div className="lightTop"></div>
+			<div className="traffic-light">
+				{colors.map ((color)=> {
+					return <Light color={color} lit={lit} setLit={setLit} />;
+				})}
+			</div>
 		</div>
 	);
 };
